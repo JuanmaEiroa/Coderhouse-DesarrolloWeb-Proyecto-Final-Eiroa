@@ -108,6 +108,74 @@ nav a:hover {
 
 /* Fin CSS index */
 /*-------------------------------------------*/
+/* Inicio CSS Integrantes */
+
+.integrantes {
+    grid-area: integrantes
+}
+
+.integrante {
+    display: flex;
+    justify-content: space-around;
+    align-content: stretch;
+    background-color: rgb(88, 6, 6);
+    margin-left: 5.5%;
+    margin-right: 5.5%;
+    padding-left: 2.2%;
+    padding-right: 2.2%;
+    border: 4px dashed rgb(59, 1, 1);
+    height: 25%;
+    border-radius: 25px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.integrante img {
+    float: left;
+    padding-top: 20px;
+    border-radius: 800px;
+    width: 150px;
+    height: 150px;
+}
+
+.integrantes h2 {
+    padding: 0%;
+}
+
+.integrantesText {
+    text-align: justify;
+    width: 70%;
+}
+
+.integrante h3 {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 150%;
+    text-decoration: underline;
+    letter-spacing: 1.5px;
+}
+
+.origen .subHeading2 {
+    font-size: 200%;
+    text-decoration: underline;
+}
+
+.origen {
+    text-align: center;
+    background-color: rgb(88, 6, 6);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 9%;
+    border: 4px dashed rgb(59, 1, 1);
+}
+
+.origen p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Fin CSS Integrantes */
+/*-------------------------------------------*/
 
 .canciones h2 {
     color: white;
