@@ -27,6 +27,36 @@ body {
     align-content: space-around;
 }
 
+#canciones {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr 1fr 1fr;
+    grid-template-rows: 20.3em 2.8em 0.1fr 5fr 1.3fr;
+    grid-template-areas: "header header header header" "none nav nav nav" ". . . ." "canciones canciones canciones canciones" "footer footer footer footer";
+    grid-column-gap:5%;
+    grid-row-gap:1%;
+    align-content: space-around;
+}
+
+#fechas {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr 1fr 1fr;
+    grid-template-rows: 20.3em 2.8em 0.1fr 5fr 1.3fr;
+    grid-template-areas: "header header header header" "none nav nav nav" ". . . ." "fechas fechas fechas fechas" "footer footer footer footer";
+    grid-column-gap:5%;
+    grid-row-gap:1%;
+    align-content: space-around;
+}
+
+#contacto{
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr 1fr 1fr;
+    grid-template-rows: 20.3em 2.8em 0.1fr 4fr 1.3fr;
+    grid-template-areas: "header header header header" "none nav nav nav" ". . . ." "contactForm contactForm contactForm contactForm" "footer footer footer footer";
+    grid-column-gap:5%;
+    grid-row-gap:1%;
+    align-content: space-around;
+}
+
 .subHeading2 {
         text-align: center;
         color: white;
@@ -186,6 +216,11 @@ nav a:hover {
 
 /* Fin CSS Integrantes */
 /*-------------------------------------------*/
+/* Inicio CSS Canciones */
+
+.canciones {
+    grid-area: canciones;
+}
 
 .canciones h2 {
     color: white;
@@ -211,21 +246,12 @@ nav a:hover {
     height: 25%;
 }
 
-.contactForm fieldset {
-    width: 40%;
-    margin-left: 28%;
-    text-align: center;
-}
+/* Fin CSS Canciones */
+/*-------------------------------------------*/
+/* Inicio CSS Fechas */
 
-.formLabel {
-    font-style: italic;
-    font-weight: bolder;
-    text-decoration: underline;
-}
-
-.contactForm fieldset legend {
-    font-size: 1.3em;
-    text-align: center;
+.fechas {
+    grid-area: fechas;
 }
 
 .divisor hr {
@@ -255,10 +281,33 @@ nav a:hover {
     font-family: "Chakra Petch", sans-serif;
 }
 
-.redesSociales a img {
-    width: 4%;
+/* Fin CSS Fechas */
+/*-------------------------------------------*/
+/* Inicio CSS Contacto */
+
+.contactForm {
+    grid-area: contactForm;
 }
 
+.contactForm fieldset {
+    width: 40%;
+    margin-left: 28%;
+    text-align: center;
+}
+
+.formLabel {
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.contactForm fieldset legend {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+/* Fin CSS Contacto */
+/*-------------------------------------------*/
 /* Inicio CSS footer */
 footer {
     grid-area: footer;
@@ -276,5 +325,5 @@ footer {
 }
 
 /* Fin CSS footer */
-
+/*-------------------------------------------*/
 /* Code by Juan Manuel Eiroa :) */
