@@ -17,6 +17,16 @@ body {
     align-content: space-around;
 }
 
+#quienes{
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr 1fr 1fr;
+    grid-template-rows: 20.3em 2.8em 0.1fr 5fr 1.3fr;
+    grid-template-areas: "header header header header" "none nav nav nav" ". . . ." "integrantes integrantes integrantes integrantes" "footer footer footer footer";
+    grid-column-gap:5%;
+    grid-row-gap:1%;
+    align-content: space-around;
+}
+
 .subHeading2 {
         text-align: center;
         color: white;
