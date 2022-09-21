@@ -2,144 +2,112 @@ body {
     background-color: rgb(24, 22, 22);
     color: white;
     font-family: "Jost", sans-serif;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 100%;
 }
 
-.banner {
-    background-image: url("images/banner.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 0% 10%;
-}
-
-.bannerTitle {
-    font-family: "Abril Fatface", monospace;
-    letter-spacing: 2px;
-    font-size: 200%;
-    color: white;
-    margin-left: 20px;
-    padding-top: 220px;
-    margin-bottom: -65px;
-    text-shadow: -1px 0 rgb(88, 6, 6), 0 1px rgb(88, 6, 6), 1px 0 rgb(88, 6, 6), 0 -1px rgb(88, 6, 6);
-}
-
-.paginaActual {
-    font-weight: bolder;
+#index {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr 1fr 1fr;
+    grid-template-rows: 325px 45px 0.5fr 5fr 2fr;
+    grid-template-areas: "header header header header" "none nav nav nav" ". . . ." "introImg introImg introText introText" "footer footer footer footer";
+    grid-column-gap:5%;
+    grid-row-gap:1%;
+    align-content: space-around;
 }
 
 .subHeading2 {
-    text-align: center;
-    color: white;
-    font-size: 1.6em;
-    font-family: "Chakra Petch", serif;
-    text-decoration: underline;
+        text-align: center;
+        color: white;
+        font-size: 1.6em;
+        font-family: "Chakra Petch", serif;
+        text-decoration: underline;
 }
 
 hr {
     border-color: blueviolet;
 }
 
-.navBar {
-    float: right;
-    font-family: "Chakra Petch", serif;
-    font-style: italic;
-    font-size: 1.2em;
-    margin-top: 25px;
+/* Inicio CSS header */
+
+header {
+    grid-area: header;
+    background-image: url(images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0% 10%;
 }
 
-.navBar a {
+header .bannerTitle {
+    height:100%;
+    font-family: "Abril Fatface", monospace;
+    font-size: 200%;
+    color: white;
+    text-shadow: -1px 0 rgb(88, 6, 6), 0 1px rgb(88, 6, 6), 1px 0 rgb(88, 6, 6), 0 -1px rgb(88, 6, 6);
+}
+
+/* Fin CSS header */
+/*-------------------------------------------*/
+/* Inicio CSS nav */
+
+nav {
+    grid-area: nav;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Chakra Petch", serif;
+    font-style: italic;
+    font-size: 150%;
+    background-color: black;
+    border-bottom: 2px purple solid;
+}
+
+nav a {
     color: white;
     text-decoration:none;
 }
 
-.navBar a:hover {
+nav a:hover {
     text-decoration:underline;
 }
 
-.intro p {
-    text-align: justify;
-    font-size: 1.5em;
-    font-style: italic;
-    width: 50%;
-    height: 10%;
-    margin-top: -30%;
-    margin-left: 45%;
-    padding-top: 7%;
-    padding-bottom: 7%;
-    padding-left: 2%;
-    padding-right: 2%;
+.paginaActual {
+    font-weight: bolder;
+}
+
+/* Fin CSS nav */
+/*-------------------------------------------*/
+/* Inicio CSS index */
+
+.introImg {
+    grid-area: introImg;
+    align-content: stretch;
+}
+
+.introImg img{
+    width: 100%;
+    justify-self: center;
+}
+
+.introText {
+    grid-area: introText;
     background-color: rgb(88, 6, 6);
-    border: dashed rgb(59, 1, 1) 5px;
+    border: dashed 5px rgb(55, 1, 1);
     border-radius: 5%;
-}
-
-.intro {
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.introImage img {
-    width: 35%;
-    padding-bottom: 2%;
-}
-
-.redesSociales {
     text-align: center;
-    color: white;
-    font-size: 1.3em;
+    font-size: 190%;
+    font-style: italic;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 90%;
+    align-items: center;
+    align-self: center;
 }
 
-.integrantes h3 {
-    font-family: "Chakra Petch", sans-serif;
-    font-size: 1.5em;
-    text-decoration: underline;
-    letter-spacing: 1.5px;
-}
-
-.integrantes {
-    background-color: rgb(88, 6, 6);
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: 4px dashed rgb(59, 1, 1);
-    height: 12.5em;
-    border-radius: 25px;
-}
-
-.integrantesText {
-    padding-left: 200px;
-    text-align: justify;
-}
-
-.integrantes img {
-    float: left;
-    padding-top: 20px;
-    border-radius: 800px;
-    width: 150px;
-    height: 150px;
-}
-
-.origen .subHeading2 {
-    font-size: 2em;
-    text-decoration: underline;
-}
-
-.origen {
-    text-align: center;
-    background-color: rgb(88, 6, 6);
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 4px dashed rgb(59, 1, 1);
-}
-
-.origen p {
-    padding-left: 20px;
-    padding-right: 20px;
-}
+/* Fin CSS index */
+/*-------------------------------------------*/
 
 .canciones h2 {
     color: white;
@@ -213,3 +181,22 @@ hr {
     width: 4%;
 }
 
+/* Inicio CSS footer */
+footer {
+    grid-area: footer;
+    width:100%;
+    text-align:center;
+}
+
+.redesSociales {
+    justify-content: center;
+    width:100%;
+}
+
+.redesSociales a img {
+    width: 4%;
+}
+
+/* Fin CSS footer */
+
+/* Code by Juan Manuel Eiroa :) */
