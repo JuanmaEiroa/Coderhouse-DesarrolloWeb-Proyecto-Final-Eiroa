@@ -1,0 +1,215 @@
+body {
+    background-color: rgb(24, 22, 22);
+    color: white;
+    font-family: "Jost", sans-serif;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.banner {
+    background-image: url("images/banner.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 10%;
+}
+
+.bannerTitle {
+    font-family: "Abril Fatface", monospace;
+    letter-spacing: 2px;
+    font-size: 200%;
+    color: white;
+    margin-left: 20px;
+    padding-top: 220px;
+    margin-bottom: -65px;
+    text-shadow: -1px 0 rgb(88, 6, 6), 0 1px rgb(88, 6, 6), 1px 0 rgb(88, 6, 6), 0 -1px rgb(88, 6, 6);
+}
+
+.paginaActual {
+    font-weight: bolder;
+}
+
+.subHeading2 {
+    text-align: center;
+    color: white;
+    font-size: 1.6em;
+    font-family: "Chakra Petch", serif;
+    text-decoration: underline;
+}
+
+hr {
+    border-color: blueviolet;
+}
+
+.navBar {
+    float: right;
+    font-family: "Chakra Petch", serif;
+    font-style: italic;
+    font-size: 1.2em;
+    margin-top: 25px;
+}
+
+.navBar a {
+    color: white;
+    text-decoration:none;
+}
+
+.navBar a:hover {
+    text-decoration:underline;
+}
+
+.intro p {
+    text-align: justify;
+    font-size: 1.5em;
+    font-style: italic;
+    width: 50%;
+    height: 10%;
+    margin-top: -30%;
+    margin-left: 45%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: rgb(88, 6, 6);
+    border: dashed rgb(59, 1, 1) 5px;
+    border-radius: 5%;
+}
+
+.intro {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.introImage img {
+    width: 35%;
+    padding-bottom: 2%;
+}
+
+.redesSociales {
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+}
+
+.integrantes h3 {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.5em;
+    text-decoration: underline;
+    letter-spacing: 1.5px;
+}
+
+.integrantes {
+    background-color: rgb(88, 6, 6);
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 4px dashed rgb(59, 1, 1);
+    height: 12.5em;
+    border-radius: 25px;
+}
+
+.integrantesText {
+    padding-left: 200px;
+    text-align: justify;
+}
+
+.integrantes img {
+    float: left;
+    padding-top: 20px;
+    border-radius: 800px;
+    width: 150px;
+    height: 150px;
+}
+
+.origen .subHeading2 {
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+.origen {
+    text-align: center;
+    background-color: rgb(88, 6, 6);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 4px dashed rgb(59, 1, 1);
+}
+
+.origen p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.canciones h2 {
+    color: white;
+    font-size: 1.6em;
+    font-family: "Chakra Petch", serif;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.canciones table {
+    text-align: center;
+    background-color: rgb(88, 6, 6);
+    border-collapse: collapse;
+    vertical-align: middle;
+}
+
+.songLink {
+    width: 15%;
+}
+
+.songLink img {
+    width: 25%;
+    height: 25%;
+}
+
+.contactForm fieldset {
+    width: 40%;
+    margin-left: 28%;
+    text-align: center;
+}
+
+.formLabel {
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.contactForm fieldset legend {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.divisor hr {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 50%;
+    border-color: white;
+}
+
+.fechasText ul {
+    list-style: none url(images/musicNote.png) inside;
+    font-size: 1.4em;
+}
+
+.fechasText h2 {
+    font-family: "Chakra Petch", sans-serif;
+    text-decoration: underline;
+}
+
+.compraEntradas {
+    text-align: center;
+}
+
+.compraEntradas h2 {
+    margin-bottom: 0px;
+    font-size: 2.3em;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.redesSociales a img {
+    width: 4%;
+}
+
