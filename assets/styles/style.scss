@@ -9,6 +9,18 @@ $box-background-color: rgb(88, 6, 6);
 $box-border: 4px dashed rgb(59, 1, 1);
 $subtitle-2: "Chakra Petch", sans-serif;
 $subtitle: 1.6em "Chakra Petch", serif;
+@mixin sizes($width, $height) {
+  height: $height;
+  width: $width;
+}
+@mixin margin-left-right($margin-left, $margin-right) {
+  margin-left: $margin-left;
+  margin-right: $margin-right;
+}
+@mixin padding-left-right($padding-left, $padding-right) {
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+}
 
 // Fin Variables SCSS //
 //-------------------------------------------//
@@ -18,8 +30,7 @@ body {
   background-color: rgb(24, 22, 22);
   color: white;
   font-family: "Jost", sans-serif;
-  margin-left: 5%;
-  margin-right: 5%;
+  @include margin-left-right(5%, 5%);
   height: 100%;
 }
 
@@ -217,10 +228,11 @@ nav {
   grid-area: introImg;
   align-content: stretch;
   img {
-    width: 100%;
+    @include sizes(100%, 100%);
     justify-self: center;
   }
 }
+
 .introText {
   grid-area: introText;
   background-color: $box-background-color;
@@ -229,8 +241,7 @@ nav {
   text-align: center;
   font-size: 190%;
   font-style: italic;
-  padding-left: 5%;
-  padding-right: 5%;
+  @include padding-left-right(5%, 5%);
   height: 90%;
   align-items: center;
   align-self: center;
@@ -245,10 +256,8 @@ nav {
   justify-content: space-around;
   align-content: stretch;
   background-color: $box-background-color;
-  margin-left: 5.5%;
-  margin-right: 5.5%;
-  padding-left: 2.2%;
-  padding-right: 2.2%;
+  @include margin-left-right(5.5%, 5.5%); 
+  @include padding-left-right(2.2%, 2.2%);
   border: $box-border;
   height: 25%;
   border-radius: 25px;
@@ -259,8 +268,7 @@ nav {
     float: left;
     padding-top: 20px;
     border-radius: 800px;
-    width: 150px;
-    height: 150px;
+    @include sizes(150px, 150px);
   }
   h3 {
     font-family: $subtitle-2;
@@ -289,8 +297,7 @@ nav {
 .origen {
   text-align: center;
   background-color: $box-background-color;
-  margin-left: 50px;
-  margin-right: 50px;
+  @include margin-left-right(50px, 50px);
   margin-top: 20px;
   margin-bottom: 9%;
   border: $box-border;
@@ -299,8 +306,7 @@ nav {
     text-decoration: underline;
   }
   p {
-    padding-left: 20px;
-    padding-right: 20px;
+    @include padding-left-right(20px, 20px);
   }
 }
 
@@ -325,8 +331,7 @@ nav {
   .songLink {
     width: 15%;
     img {
-      width: 25%;
-      height: 25%;
+      @include sizes (25%, 25%);
     }
   }
 }
@@ -341,8 +346,7 @@ nav {
 
 .divisor hr {
   width: 50%;
-  margin-left: 25%;
-  margin-right: 50%;
+  @include margin-left-right(25%, 50%);
   border-color: white;
 }
 

@@ -166,6 +166,7 @@ nav {
   grid-area: introImg;
   align-content: stretch; }
   .introImg img {
+    height: 100%;
     width: 100%;
     justify-self: center; }
 
@@ -205,8 +206,8 @@ nav {
     float: left;
     padding-top: 20px;
     border-radius: 800px;
-    width: 150px;
-    height: 150px; }
+    height: 150px;
+    width: 150px; }
   .integrante h3 {
     font-family: "Chakra Petch", sans-serif;
     font-size: 150%;
@@ -258,8 +259,8 @@ nav {
   .canciones .songLink {
     width: 15%; }
     .canciones .songLink img {
-      width: 25%;
-      height: 25%; }
+      height: 25%;
+      width: 25%; }
 
 /* Fin CSS Canciones */
 /*-------------------------------------------*/
